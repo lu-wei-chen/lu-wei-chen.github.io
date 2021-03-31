@@ -10,31 +10,45 @@
               margin: 0; padding: 0;  
               font-family: 'Courier New', Courier, monospace;}
         div {
-            margin: 30%;
+            margin: 10%;
         }
         h1 {color: #0D461A;}
         p {color: #4C5A4A; font-size: 1.1rem; letter-spacing: 10px;}
-        a {font-size: 0.9rem;}
+        a {font-size: 1.2rem;}
+        
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        .left {
+            width: 25%;
+        }
+
+        .right {
+            width: 75%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h1> ARTIST CV</h1>
-        
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor atque laboriosam vel commodi nulla eaque nobis assumenda, suscipit magnam consequatur doloribus accusantium dolorum. Nesciunt est error pariatur fuga atque?
-        </p>
-        
-        <a href="/works.html"> WORKS</a> 
-    </div>
-    <div>
-        <p> another para</p>
-    </div>
-    <div>
-        <p> another para</p>
-    </div>
-    <div>
-        <p> another para</p>
+    <div class="row">
+        <div class="column left">
+            <h1> ARTIST CV</h1> 
+            <a href="/works.html"> WORKS</a> 
+        </div>
+        <div class="column right">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor atque laboriosam vel commodi nulla eaque nobis assumenda, suscipit magnam consequatur doloribus accusantium dolorum. Nesciunt est error pariatur fuga atque?
+            </p>
+        </div>
     </div>
 
 
