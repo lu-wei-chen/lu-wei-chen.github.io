@@ -11,7 +11,7 @@
               margin: 0; padding: 0;  
               font-family: 'Courier New', Courier, monospace;}
         div {
-            margin: 10%;
+            margin: 5%;
         }
         h1 {color: #0D461A;}
         p {color: #4C5A4A; font-size: 1.1rem; letter-spacing: 4px;}
@@ -23,16 +23,20 @@
         }
 
         /* Create two equal columns that sits next to each other */
-        .column {
-            flex: 50%;
-            padding: 10px;
-            height: 300px; /* Should be removed. Only for demonstration */
+        .left{
+            flex: 20%;
+            height: 100vh; 
         }
+        .right{
+            flex: 80%;
+            height: 100vh;
+        }
+
     </style>
 </head>
 <body>
-    <div class="row">
-        <div class="column " style="background-color:#aaa;">
+    <section class="row">
+        <div class="column left" style="background-color:#aaa;">
             <ul>
                 <li> <a href="/works.html"> WORKS</a> </li>
                 <li> <a href="/projects.html"> PROJECTS</a>     </li>
@@ -40,13 +44,13 @@
                 <li> <a href="/contact.html"> CONTACT</a> </li>
             </ul>
         </div>
-        <div class="column " style="background-color:#bbb;">
+        <div class="column right" style="background-color:#bbb;">
             <h1> ARTIST CV</h1> 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor atque laboriosam vel commodi nulla eaque nobis assumenda, suscipit magnam consequatur doloribus accusantium dolorum. Nesciunt est error pariatur fuga atque?
             </p>
         </div>
-    </div>
+    </section>
 
 
 
