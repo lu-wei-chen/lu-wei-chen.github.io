@@ -18,31 +18,21 @@
         a {font-size: 1.2rem; text-decoration: none; }
         a:hover {color: hotpink; text-decoration: underline;}
         ul{ list-style-type: none;}
+        .row {
+            display: flex;
+        }
+
+        /* Create two equal columns that sits next to each other */
         .column {
-            float: left;
+            flex: 50%;
             padding: 10px;
             height: 300px; /* Should be removed. Only for demonstration */
-        }
-
-        .left {
-            width: 25%;
-        }
-
-        .right {
-            width: 75%;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
         }
     </style>
 </head>
 <body>
-
-        <div class="column left">
+    <div class="row">
+        <div class="column " style="background-color:#aaa;">
             <ul>
                 <li> <a href="/works.html"> WORKS</a> </li>
                 <li> <a href="/projects.html"> PROJECTS</a>     </li>
@@ -50,12 +40,13 @@
                 <li> <a href="/contact.html"> CONTACT</a> </li>
             </ul>
         </div>
-        <div class="column right">
+        <div class="column " style="background-color:#bbb;">
             <h1> ARTIST CV</h1> 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor atque laboriosam vel commodi nulla eaque nobis assumenda, suscipit magnam consequatur doloribus accusantium dolorum. Nesciunt est error pariatur fuga atque?
             </p>
         </div>
+    </div>
 
 
 
